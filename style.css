@@ -1,0 +1,205 @@
+:root {
+    --violet: #9933FF;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-bottom:50px;
+    background-color: rgb(236, 236, 236);
+    
+    h1 {
+        font-size:60px;
+    }
+}
+
+.container__body {
+
+    h3 {
+        padding-left:20px;
+        color: var(--violet);
+        font-weight: 200;
+        font-style: italic;
+    }
+}
+
+.container {
+    background-color:#FFF;
+    height:70vw;
+    border:1px solid black;
+}
+
+nav {
+    background-color: var(--violet);
+    height:3.5vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    ul {
+        display:flex;
+        list-style-type: none;
+        gap:30px;
+    }
+
+    li{
+        padding:15px;
+    }
+
+    li:hover {
+        background-color:gray;
+        cursor:pointer;
+    }
+}
+
+.container__image {
+    position:relative;
+    background-image: url("assets/phto.jpg");
+    height:22vw;
+    width:100%;
+    background-position: 45% 48%;
+    background-size:cover;
+
+    & .image__center {
+        position:absolute;
+        z-index:2;
+        margin:0;
+        color:#FFF;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+        width:100%;
+    }
+}
+
+.container__dog h1 {
+    text-align:center;
+    color: var(--violet);
+    font-size:45px;
+}
+
+
+.dog__types {
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    width:100%;
+
+    & .dog__types_text {
+        text-align:center;
+        padding:30px;
+    }
+
+    & .dog__name {
+        font-size:25px;
+    }
+
+    & img {
+        width:100%;
+        height:15vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    :root {
+        --violet: #9933FF;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        margin-bottom:50px;
+        background-color: rgb(236, 236, 236);
+        
+        h1 {
+            font-size:60px;
+        }
+    }
+    
+    .container__body {
+    
+        h3 {
+            padding-left:20px;
+            color: var(--violet);
+            font-weight: 200;
+            font-style: italic;
+        }
+    }
+    
+    .container {
+        background-color:#FFF;
+        height:70vw;
+        border:1px solid black;
+    }
+    
+    nav {
+        background-color: var(--violet);
+        height:8.5vw;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        ul {
+            display:flex;
+            list-style-type: none;
+            gap:30px;
+        }
+
+        li{
+            padding:15px;
+        }
+    
+        li:hover {
+            background-color:gray;
+            cursor:pointer;
+        }
+    }
+    
+    .container__image {
+        position:relative;
+        background-image: url("assets/phto.jpg");
+        height:67vw;
+        width:100%;
+        background-position: 45% 48%;
+        background-size:cover;
+    
+        & .image__center {
+            position:absolute;
+            z-index:2;
+            margin:0;
+            color:#FFF;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height:100%;
+            width:100%;
+        }
+    }
+    
+    .container__dog h1 {
+        text-align:center;
+        color: var(--violet);
+        font-size:45px;
+    }
+    
+    
+    .dog__types {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        gap:30px;
+        width:100%;
+    
+        & .dog__types_text {
+            text-align:center;
+            padding:30px;
+        }
+    
+        & .dog__name {
+            font-size:25px;
+        }
+    
+        & img {
+            width:100%;
+            height:45vw;
+        }
+    }
+}
